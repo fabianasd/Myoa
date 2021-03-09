@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Myoa
 //
-//  Created by Gabriel Petrovick on 08/03/21.
+//  Created by Fabiana Petrovick on 08/03/21.
 //  Copyright © 2021 Fabiana Petrovick. All rights reserved.
 //
 
@@ -12,9 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start Over", style: .plain, target: self, action: #selector(startOver))
     }
 
-
+    @objc func startOver() {
+        
+    }
 }
 

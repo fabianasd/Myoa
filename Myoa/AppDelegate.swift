@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Myoa
 //
-//  Created by Gabriel Petrovick on 08/03/21.
+//  Created by Fabiana Petrovick on 08/03/21.
 //  Copyright © 2021 Fabiana Petrovick. All rights reserved.
 //
 
