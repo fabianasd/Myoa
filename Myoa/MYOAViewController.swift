@@ -8,17 +8,26 @@
 
 import UIKit
 
+// MARK: - ViewController: UIViewController
+
 class MYOAViewController: UIViewController {
+    
+    // MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start Over", style: .plain, target: self, action: #selector(startOver)) //criou o botão Start Over
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start Over", style: .plain, target: self, action: #selector(startOver)) //criou o botão Start Over
     }
     
     @objc func startOver() {
-        if let navigationController = navigationController {
-            navigationController.popViewController(animated: true)
+        if let navigationController = self.navigationController {
+            //   navigationController.popViewController(animated: true) // volta de forma decrescente nas telas
+            navigationController.popToRootViewController(animated: true) // volta para a primeira tela diretamente
         }
     }
+    
+    //desinicializador
+    deinit {
+        print("View controller deal")
+    }
 }
-
